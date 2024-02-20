@@ -5,7 +5,7 @@ import FeedbackForm from "./FeedbackForm";
 describe("Feedback Form", () => {
   test("User is able to submit the form if the score is lower than 5 and additional feedback is provided", () => {
     const score = "3";
-    const comment = "The service was not good. I would not recommend it.";
+    const comment = "The service was not very good. I would not recommend it.";
     const handleSubmit = jest.fn();
     render(<FeedbackForm onSubmit={handleSubmit} />);
 
